@@ -3,9 +3,7 @@
 # Saidi Sodiq <saidisodiq96@gmail.com>
 
 if __name__ == "__main__":
-	"""prints the result of add,
-		sub, mul and div of 10 and 5
-	"""
+	"""prints the result of add, sub, mul and div of 10 and 5."""
 	from calculator_1 import add, sub, mul, div
 
 # assign values to variables
