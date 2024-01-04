@@ -3,5 +3,5 @@
 # Saidi Sodiq <saidisodiq96@gmail.com>
 
 def islower(c):
-"""checks for lowercase character."""
-	return 'a' <= c <= 'z'
+	"""checks for lowercase character."""
+	return ord('a') <= ord(c) <= ord('z')
