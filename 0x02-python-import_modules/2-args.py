@@ -5,19 +5,20 @@
 if __name__ == "__main__":
 	"""prints the number of and the list of its arguments."""
 	import sys
-	num_args = len(sys.argv) - 1
+	ofArg = sys.argv
+	noOfArg = len(ofArg) - 1
 
 	case_dict = {
 		0: "0 arguments.",
 		1: "1 argument:",
-		2: "{} arguments:".format(num_args)
+		2: "{} arguments:".format(noOfArg)
 	}
 
-	case_key = min(2, num_args)
+	case_key = min(2, noOfArg)
 
 	print(case_dict[case_key])
 
-	if num_args > 0:
+	if noOfArg > 0:
 
-		for i in range(1, num_args + 1):
-			print("{}: {}".format(i, sys.argv[i]))
+		for i in range(1, noOfArg + 1):
+			print("{}: {}".format(i, ofArg[i]))
