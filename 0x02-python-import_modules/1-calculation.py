@@ -12,12 +12,12 @@ if __name__ == "__main__":
 
 # perform the calculations
 	operations = {
-		'add': add,
-		'sub': sub,
-		'mul': mul,
-		'div': div
+		'add': ('+', add),
+		'sub': ('-', sub),
+		'mul': ('*', mul),
+		'div': ('/', div)
 	}
 
-	for operation_name, operation_func in operations.items():
+	for operation_name, (symbol, operation_func) in operations.items():
 		result = operation_func(a, b)
-		print("{} + {} = {}".format(a, b, result))
+		print("{} {} {} = {}".format(a, symbol, b, result))
