@@ -6,15 +6,8 @@ if __name__ == "__main__":
 	import sys
 	num_args = len(sys.argv) - 1
 
-	case_dict = {
-		0: "0 arguments.",
-		1: "1 argument:",
-		2: "{} arguments:".format(num_args)
-	}
-
-	case_key = min(2, num_args)
-
-	print(case_dict[case_key])
+	print("{} argument{}".format(num_args, "s" if num_args != 1 else ""), end="")
+	print("{}{}".format(":" if num_args > 0 else ".", "" if num_args > 0 else ""))
 
 	for i in range(1, num_args + 1):
 		print("{}: {}".format(i, sys.argv[i]))
