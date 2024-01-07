@@ -17,5 +17,7 @@ if __name__ == "__main__":
 
 	print(case_dict[case_key])
 
-	for i in range(1, num_args + 1):
-		print("{}: {}".format(i, sys.argv[i]))
+	if num_args > 0:
+
+		for i in range(1, num_args + 1):
+			print("{}: {}".format(i, sys.argv[i]))
