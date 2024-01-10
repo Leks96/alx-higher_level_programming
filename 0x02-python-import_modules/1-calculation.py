@@ -20,4 +20,4 @@ if __name__ == "__main__":
 
 	for operation_name, (symbol, operation_func) in operations.items():
 		result = operation_func(a, b)
-		print("{} {} {} = {}".format(a, symbol, b, result))
+		print("{:d} {} {:d} = {}".format(a, symbol, b, result))

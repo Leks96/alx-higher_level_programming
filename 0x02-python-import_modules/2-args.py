@@ -11,7 +11,7 @@ if __name__ == "__main__":
 	case_dict = {
 		0: "0 arguments.",
 		1: "1 argument:",
-		2: "{} arguments:".format(noOfArg)
+		2: "{:d} arguments:".format(noOfArg)
 	}
 
 	case_key = min(2, noOfArg)
@@ -21,4 +21,4 @@ if __name__ == "__main__":
 	if noOfArg > 0:
 
 		for i in range(1, noOfArg + 1):
-			print("{}: {}".format(i, ofArg[i]))
+			print("{:d}: {}".format(i, ofArg[i]))
