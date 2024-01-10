@@ -5,6 +5,6 @@ import hidden_4
 if __name__ == "__main__":
 	def_names = dir(hidden_4)
 
-	for names in sorted(def_names):
+	for name in sorted(def_names):
 		if not name.startswith("__"):
 			print(name)
