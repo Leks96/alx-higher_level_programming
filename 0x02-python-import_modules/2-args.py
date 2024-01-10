@@ -8,13 +8,13 @@ if __name__ == "__main__":
 	commandLineArguments = sys.argv
 	numberOfArguments = len(commandLineArguments) - 1
 
-	if numberOfArguments < 1
+	if numberOfArguments < 1:
 		print("0 arguments.")
-	elif numberOfArguments == 1
-		print("1 argumet:")
+	elif numberOfArguments == 1:
+		print("1 argument:")
 	else:
 		print(f"{numberOfArguments} arguments:")
 
-	if numberOfArguments > 0
-		for argumentIndex in range(1, numberOfArguments + 1)
+	if numberOfArguments > 0:
+		for argumentIndex in range(1, numberOfArguments + 1):
 			print(f"{argumentIndex}: {commandLineArguments[argumentIndex]}")
