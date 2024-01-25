@@ -12,6 +12,7 @@ class Square:
 		area(self): Returns the current square area
 		size(self): Getter method to retrieve size.
 		size(self, value): Setter method to set size attr.
+		my_print(self): print the square with the # char.
 	"""
 
 	def __init__(self, size=0):
@@ -71,3 +72,13 @@ class Square:
 			int: The area of the square.
 		"""
 		return self.__size ** 2
+
+	def my_print(self):
+		"""
+			prints the square with # character.
+		"""
+		if self.__size == 0:
+			print()
+		else:
+			for _ in range(self.__size):
+				print('#' * self.__size)
