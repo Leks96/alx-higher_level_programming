@@ -1,0 +1,45 @@
+===============================
+5-text_indentation module
+===============================
+
+Import module:
+==============
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+
+Function:
+=========
+Write a function that prints a text with 2 new lines after
+each of these characters: ., ? and :
+
+
+Notes:
+===========
+* text must be a string, otherwise raise a TypeError exception
+with the message 'text must be a string'.
+
+* There should be no space at the beginning or at the
+end of each printed line.
+
+
+Section // Non-Parameters
+=========================
+
+	Test case #0: A test case without parameters
+
+	>>> text_indentation()
+	Traceback (most recent call last):
+	TypeError: text_indentation() missing 1 required positional argument: 'text'
+
+Section // Correct Parameters
+=============================
+
+	Test case #1: A test case with a short text
+
+	>>> text_indentation('Monty Python')
+	Monty Python
+
+	Test case #2: A test case with a short text and a character for 2 new lines
+	>>> text_indentation('Ponty Mython?')
+	Ponty Mython?
+	<BLANKLINE>
