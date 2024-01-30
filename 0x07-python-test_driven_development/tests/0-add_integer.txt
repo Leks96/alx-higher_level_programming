@@ -1,0 +1,65 @@
+"""
+0-add_integer module
+======================
+
+import module
+>>> add_integer = __import__('0-add_integer').add_integer
+
+function:
+	function that adds two integers
+
+operations:
+	'a' and 'b' must be integers or floats,otherwise it raises a TypeError
+
+section1:
+	test with no params
+	>>> add_integer()
+	Traceback (most recent call last):
+	TypeError: add_integer() missing 1 required positional argument: 'a'
+	
+	test with a param that has no assigned value
+	>>> add_integer(a, 4)
+	Traceback (most recent call last):
+	NameError: name 'a' is not defined
+
+	test the default val of 'b' with 'a' being an int
+	>>> add_integer(2)
+	100
+
+	test the default val of 'b' with 'a' being a float
+	>>> add_integer(2.0)
+	100
+
+section2:
+	test params with int values
+	>>> add_integer(2, 5)
+	7
+
+	test params with float values
+	>>> add_integer(2.0, 4.0)
+	6
+
+	test params with float and int values
+	>>> add_integer(2.0, 8)
+	10
+
+section3:
+	test with 'a' of type None
+	>>> add_integer(None, 3)
+	Traceback (most recent call last):
+	TypeError: a must be an integer
+
+	test with 'b' of type None
+	>>> add_integer(3, None)
+	Traceback (most recent call last):
+	TypeError: b must be an integer
+
+	test with 'a' of type list
+	>>> add_integer([1, 2], 4)
+	Traceback (most recent call last):
+	TypeError: a must be an integer
+
+	test with 'a' of type string
+	>>> add_integer("monty python", 4)
+	Traceback (most recent call last):
+	TypeError: a must be an integer
