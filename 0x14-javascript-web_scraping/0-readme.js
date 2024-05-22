@@ -1,4 +1,5 @@
 #!/usr/bin/node
+//a script that reads and prints the content of a file.
 
 const fs = require('fs');
 // Import the built-in Node.js 'fs' module.
@@ -11,7 +12,7 @@ fs.readFile(file, 'utf8', function (err, res) {
 
   if (err) {
     // If an error occurs during the file read operation, the 'error' parameter will contain an error object.
-    console.error('Error reading the file:', err);
+    console.error(err);
 
   } else {
     // If the file is read successfully, the 'content' parameter will contain the contents of the file as a string.
