@@ -6,7 +6,7 @@ const fs = require('fs');
 
 const file = process.argv[2];
 
-fs.readFile(file, 'utf8', function (err, res) {
+fs.readFile(file, 'utf8', (err, res) => {
   // Use fs.readFile() to read the contents of a file specified as a command-line argument
   // 'utf8' specifies the encoding of the file being read
 
